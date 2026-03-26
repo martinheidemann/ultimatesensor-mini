@@ -8,11 +8,11 @@ substitutions:
   friendly_name: "UltimateSensor Mini"
   ultimatesensor_mini_hardware_version: "V1-Basic"
   wifi_fast_connect: "true"
-  update_manifest_url: "https://smarthomeshop.github.io/ultimatesensor-mini/ultimatesensor-mini-basic-manifest.json"
+  update_manifest_url: "https://github.com/martinheidemann/ultimatesensor-mini/ultimatesensor-mini-basic-manifest.json"
 
 packages:
   common: !include ultimatesensor-mini-common.yaml
 
 dashboard_import:
-  package_import_url: github://smarthomeshop/ultimatesensor-mini/ultimatesensor-mini-v1/ultimatesensor-mini-basic.yaml@main
+  package_import_url: https://github.com/martinheidemann/ultimatesensor-mini/ultimatesensor-mini-v1/ultimatesensor-mini-basic.yaml@main
   import_full_config: false
