@@ -305,19 +305,3 @@ binary_sensor:
             switch.is_on: use_wake_word
           then:
             - voice_assistant.stop:
-  
-  # UltimateSensor Mini Information
-  - platform: template
-    id: text_sensor_ultimatesensor_mini_software_version
-    name: "Software Version"
-    update_interval: 5h
-    lambda: |-
-      return {"${project_version}"};
-    entity_category: "diagnostic"
-  - platform: template
-    id: text_sensor_ultimatesensor_mini_hardware_version
-    name: "Hardware Version"
-    update_interval: 5h
-    lambda: |-
-      return {"${ultimatesensor_mini_hardware_version}"};
-    entity_category: "diagnostic" 
