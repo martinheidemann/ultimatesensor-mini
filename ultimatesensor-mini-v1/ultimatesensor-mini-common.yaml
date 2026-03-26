@@ -239,13 +239,6 @@ sensor:
       temperature_source: scd41_temperature
 
   # System monitoring sensors
-  - platform: wifi_signal
-    id: wifi_signal_sensor
-    name: "WiFi Signal"
-    update_interval: 60s
-    unit_of_measurement: "dBm"
-    entity_category: "diagnostic"
-    
   - platform: internal_temperature
     id: cpu_temperature
     name: "CPU Temperature"
